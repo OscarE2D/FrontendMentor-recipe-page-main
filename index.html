@@ -16,41 +16,161 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
+      .recipe-card__footer {
         font-size: 11px;
         text-align: center;
       }
-      .attribution a {
+      .recipe-card__footer a {
         color: hsl(228, 45%, 44%);
       }
     </style>
   </head>
   <body>
-    Simple Omelette Recipe An easy and quick dish, perfect for any meal. This
-    classic omelette combines beaten eggs cooked to perfection, optionally
-    filled with your choice of cheese, vegetables, or meats. Preparation time
-    Total: Approximately 10 minutes Preparation: 5 minutes Cooking: 5 minutes
-    Ingredients 2-3 large eggs Salt, to taste Pepper, to taste 1 tablespoon of
-    butter or oil Optional fillings: cheese, diced vegetables, cooked meats,
-    herbs Instructions Beat the eggs: In a bowl, beat the eggs with a pinch of
-    salt and pepper until they are well mixed. You can add a tablespoon of water
-    or milk for a fluffier texture. Heat the pan: Place a non-stick frying pan
-    over medium heat and add butter or oil. Cook the omelette: Once the butter
-    is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs
-    evenly coat the surface. Add fillings (optional): When the eggs begin to set
-    at the edges but are still slightly runny in the middle, sprinkle your
-    chosen fillings over one half of the omelette. Fold and serve: As the
-    omelette continues to cook, carefully lift one edge and fold it over the
-    fillings. Let it cook for another minute, then slide it onto a plate. Enjoy:
-    Serve hot, with additional salt and pepper if needed. Nutrition The table
-    below shows nutritional values per serving without the additional fillings.
-    Calories 277kcal Carbs 0g Protein 20g Fat 22g
+    <main class="recipe-card__main-container" aria-label="recipe-content">
+      <article class="recipe-card">
+        <figure class="recipe-card__image-container">
+          <img
+            src="./assets/images/image-omelette.jpeg"
+            alt="Classic omelet filled with vegetables, accompanied by cheese, on a white plate"
+            loading="lazy"
+            decoding="async"
+            referrerpolicy="no-referrer"
+            crossorigin="anonymous"
+            class="recipe-card__image"
+          />
+          <figcaption class="recipe-card__caption">
+            Omelet: A quick and easy dish, perfect for any meal.
+          </figcaption>
+        </figure>
+        <header class="recipe-card__header-container">
+          <h1 class="recipe-card__title">Simple Omelette Recipe</h1>
+          <p class="recipe-card__description">
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
+          </p>
+        </header>
 
-    <div class="attribution">
+        <section class="recipe-card__preparation-time">
+          <h2 class="recipe-card__preparation-time-title">Preparation time</h2>
+          <ul class="recipe-card__list-times">
+            <li class="recipe-card__item">
+              <strong>Total:</strong> Approximately 10 minutes
+            </li>
+            <li class="recipe-card__item">
+              <strong>Preparation:</strong> 5 minutes
+            </li>
+            <li class="recipe-card__item">
+              <strong>Cooking:</strong> 5 minutes
+            </li>
+          </ul>
+        </section>
+        <section class="recipe-card__ingredients">
+          <h2 class="recipe-card__ingredients-title">Ingredients</h2>
+          <ul class="recipe-card__list-ingredients">
+            <li class="recipe-card__list-item">2-3 large eggs</li>
+            <li class="recipe-card__list-item">Salt, to taste</li>
+            <li class="recipe-card__list-item">Pepper, to taste</li>
+            <li class="recipe-card__list-item">
+              1 tablespoon of butter or oil
+            </li>
+            <li class="recipe-card__list-item">
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </li>
+          </ul>
+        </section>
+        <section class="recipe-card__instructions">
+          <h2 class="recipe-card__instructions-title">Instructions</h2>
+          <ol class="recipe-card__instructions-list">
+            <li class="recipe-card__step">
+              <h3 class="recipe-card__step-title">Beat the eggs:</h3>
+              <p class="recipe-card__step-description">
+                In a bowl, beat the eggs with a pinch of salt and pepper until
+                they are well mixed. You can add a tablespoon of water or milk
+                for a fluffier texture.
+              </p>
+            </li>
+
+            <li class="recipe-card__step">
+              <h3 class="recipe-card__step-title">Heat the pan:</h3>
+              <p class="recipe-card__step-description">
+                Place a non-stick frying pan over medium heat and add butter or
+                oil.
+              </p>
+            </li>
+
+            <li class="recipe-card__step">
+              <h3 class="recipe-card__step-title">Cook the omelette:</h3>
+              <p class="recipe-card__step-description">
+                Once the butter is melted and bubbling, pour in the eggs. Tilt
+                the pan to ensure the eggs evenly coat the surface.
+              </p>
+            </li>
+
+            <li class="recipe-card__step">
+              <h3 class="recipe-card__step-title">Add fillings (optional):</h3>
+              <p class="recipe-card__step-description">
+                When the eggs begin to set at the edges but are still slightly
+                runny in the middle, sprinkle your chosen fillings over one half
+                of the omelette.
+              </p>
+            </li>
+            <li class="recipe-card__step">
+              <h3 class="recipe-card__step-title">Fold and serve:</h3>
+
+              <p class="recipe-card__step-description">
+                As the omelette continues to cook, carefully lift one edge and
+                fold it over the fillings. Let it cook for another minute, then
+                slide it onto a plate.
+              </p>
+            </li>
+            <li class="recipe-card__step">
+              <h3 class="recipe-card__step-title">Enjoy:</h3>
+              <p class="recipe-card__step-description">
+                Serve hot, with additional salt and pepper if needed.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section class="recipe-card__nutrition">
+          <h2 class="recipe-card__nutrition-title">Nutrition</h2>
+
+          <table class="recipe-card__nutrition-table">
+            <caption class="recipe-card__nutrition-table-caption">
+              The table below shows nutritional values per serving without the
+              additional fillings.
+            </caption>
+
+            <tbody class="recipe-card__nutrition-table-body">
+              <tr>
+                <th scope="row">Calories</th>
+                <td>277 kcal</td>
+              </tr>
+              <tr>
+                <th scope="row">Carbs</th>
+                <td>0 g</td>
+              </tr>
+              <tr>
+                <th scope="row">Protein</th>
+                <td>20 g</td>
+              </tr>
+              <tr>
+                <th scope="row">Fat</th>
+                <td>22 g</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+    </main>
+    <footer class="recipe-card__footer" aria-label="page footer">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by <a href="https://github.com/OscarE2D">Oscar Echenique D.</a>.
+    </footer>
   </body>
 </html>
