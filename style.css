@@ -1,0 +1,108 @@
+/*Importación de fuentes*/
+
+@font-face {
+  font-family: "outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  font-weight: 400, 600, 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "young-serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Reset Inicial*/
+/*El modelo de caja moderno comienza en la raíz*/
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+/*Heredan del modelo de caja todos los elementos*/
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/*Ajustes generales del body*/
+
+body {
+  font-family: sans-serif;
+  font-weight: 300;
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Imágenes y medios fluidos*/
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Formularios sin estilos raros*/
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/*Enlaces sin subrayado ni color azul*/
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Listas sin bullets*/
+
+ul,
+ol {
+  list-style: none;
+}
+
+/*tablas limpias*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Bloque de Variables*/
+
+:root {
+  --color-bg-card-white: hsl(0, 0%, 100%);
+
+  --color-bg-main-stone-100: hsl(30, 54%, 90%);
+  --color-hr-Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --color-title-h1-stone-900: hsl(24, 5%, 18%);
+  --color-title-h2-brown-800: hsl(14, 45%, 36%);
+  --color-subtitle-h2-rose-800: hsl(332, 51%, 32%);
+  --color-second-bg-card-Rose-50: hsl(330, 100%, 98%);
+  --ff-heading: "Young Serif", serif;
+  --ff-body: "Outfit", sans-serif;
+}
