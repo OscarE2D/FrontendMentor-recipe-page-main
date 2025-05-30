@@ -103,7 +103,7 @@ table {
   --color-title-h2-brown-800: hsl(14, 45%, 36%);
   --color-subtitle-h2-rose-800: hsl(332, 51%, 32%);
   --color-second-bg-card-Rose-50: hsl(330, 100%, 98%);
-  --ff-heading: "Young Serif", serif;
+  --ff-heading: "young-serif", serif;
   --ff-body: "Outfit", sans-serif;
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -129,7 +129,7 @@ table {
   width: 100%;
   max-width: 43.75rem;
   min-width: 20rem;
-  padding: var(--spacing-xlg);
+  padding: var(--spacing-xxlg);
   background-color: var(--color-bg-card-white);
   border-radius: var(--spacing-lg);
   box-shadow: var(--box-shadow-card);
@@ -143,6 +143,8 @@ table {
   height: auto;
   border-top-left-radius: var(--spacing-lg);
   border-top-right-radius: var(--spacing-lg);
+  border-bottom-left-radius: var(--spacing-sm);
+  border-bottom-right-radius: var(--spacing-sm);
   margin-bottom: var(--spacing-lg);
 }
 .recipe-card__image-caption {
@@ -157,7 +159,7 @@ table {
 
 /*Estilos del header: Titulo y descripción*/
 .recipe-card__title {
-  font-family: "young-serif", sans-serif;
+  font-family: var(--ff-heading), sans-serif;
   font-weight: 400;
   font-size: clamp(2rem, 1.946rem + 0.268vw, 2.188rem);
   margin-bottom: 0.5rem;
@@ -165,7 +167,7 @@ table {
 }
 
 .recipe-card__description {
-  font-family: "Outfit", sans-serif;
+  font-family: var(--ff-body), sans-serif;
   font-weight: 400;
   font-size: clamp(0.75rem, 0.679rem + 0.357vw, 1rem);
   color: var(--Stone-600);
@@ -179,7 +181,7 @@ table {
   background-color: var(--color-second-bg-card-Rose-50);
   padding: var(--spacing-xlg);
   border-radius: 0.75rem;
-  font-family: "Outfit", sans-serif;
+  font-family: var(--ff-body), sans-serif;
   font-size: clamp(0.75rem, 0.679rem + 0.357vw, 1rem);
   margin-bottom: var(--spacing-xlg);
 }
@@ -205,23 +207,71 @@ table {
 }
 
 .recipe-card__item strong {
-  margin-left: 1rem;
+  margin-left: var(--spacing-md);
   font-weight: 700;
   color: var(--color-title-h1-stone-900);
 }
 
+/*Estilos de la seccion de ingredientes*/
+
+.recipe-card__ingredients {
+  margin-bottom: 2rem;
+}
+
+.recipe-card__ingredients-title {
+  font-family: var(--ff-heading);
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.143rem + 0.536vw, 1.625rem);
+  color: var(--color-title-h2-brown-800);
+  margin-bottom: var(--spacing-lg);
+}
+
+.recipe-card__list-ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-top: 0;
+  padding-left: var(--spacing-xxlg);
+  color: var(--Stone-600);
+  list-style: disc;
+  font-size: clamp(0.75rem, 0.679rem + 0.357vw, 1rem);
+}
+
+.recipe-card__list-item {
+  font-family: var(--ff-body);
+  text-indent: 1.5rem;
+  font-weight: 400;
+}
+.recipe-card__list-item::marker {
+  color: var(--color-title-h2-brown-800);
+}
+
+.recipe-card__separator {
+  height: 0.5px;
+  border: none;
+  color: var(--color-hr-Stone-150);
+  background-color: var(--color-hr-Stone-150);
+}
+
 /*
-Fondo: --rose-50 → hsl(330, 100%, 98%)
+Títulos:
 
-Color de bullets e íconos: --rose-800 → hsl(332, 51%, 32%)
 
-Padding: 1.5rem
+    Fuente: Young Serif
 
-Border-radius: 0.75rem (12px)
+    Tamaño: 1.5rem (24px)
 
-Tamaño fuente: 1rem (16px)
+    Color: --brown-800 → hsl(14, 45%, 36%)
 
-Títulos en lista: font-weight: 700 (Outfit bold)
+Lista:
 
-Espaciado entre ítems: 0.5rem (8px)
+    Bullet tipo disc con color --stone-600
+
+    Fuente: Outfit, 400, tamaño: 1rem (16px)
+
+    Espaciado entre ítems: 0.5rem (8px)
+
+Margin-top título respecto a bloque anterior: 2rem (32px)
+
+Margin-bottom lista: 1.5rem
 */
