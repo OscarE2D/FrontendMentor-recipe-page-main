@@ -128,7 +128,7 @@ table {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 31.25rem;
+  max-width: 44rem;
   padding: var(--spacing-xlg);
   background-color: var(--color-bg-card-white);
   border-radius: var(--spacing-lg);
@@ -154,3 +154,24 @@ table {
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
+
+/*Estilos del header: Titulo y descripción*/
+.recipe-card__title {
+  font-family: "young-serif", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.125rem, 1.018rem + 0.536vw, 1.5rem);
+  margin-bottom: 0.5rem;
+  color: var(--color-title-h1-stone-900);
+}
+
+.recipe-card__description {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.75rem, 0.679rem + 0.357vw, 1rem);
+  color: var(--Stone-600);
+  line-height: var(--spacing-lg);
+  margin-bottom: var(--spacing-xlg);
+}
+/*
+
+*/
