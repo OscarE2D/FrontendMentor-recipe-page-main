@@ -106,3 +106,29 @@ table {
   --ff-heading: "Young Serif", serif;
   --ff-body: "Outfit", sans-serif;
 }
+
+/* styles Main Container*/
+.recipe-card__main-container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100dvh;
+  place-items: center;
+  background-color: var(--color-bg-main-stone-100);
+}
+
+/*CONTENEDOR GENERAL 
+
+Ancho máximo en desktop: ~736 px (46rem)
+
+Bordes redondeados: border-radius: 1.5rem (24 px)
+
+Sombra: muy sutil, posiblemente box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05)
+
+
+Fondo de la tarjeta: background-color: hsl(0, 0%, 100%) → --white
+
+Padding interior general: 2rem (32 px) en desktop
+
+Responsive: centrado, con padding lateral para móviles (sugiero padding: 1.5rem o clamp() en móvil)
+
+*/
