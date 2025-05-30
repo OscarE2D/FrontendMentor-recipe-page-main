@@ -105,6 +105,13 @@ table {
   --color-second-bg-card-Rose-50: hsl(330, 100%, 98%);
   --ff-heading: "Young Serif", serif;
   --ff-body: "Outfit", sans-serif;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.25rem;
+  --spacing-xlg: 1.5rem;
+  --spacing-xxlg: 2rem;
+  --box-shadow-card: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* styles Main Container*/
@@ -116,19 +123,17 @@ table {
   background-color: var(--color-bg-main-stone-100);
 }
 
-/*CONTENEDOR GENERAL 
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 31.25rem;
+  padding: var(--spacing-xlg);
+  background-color: var(--color-bg-card-white);
+  border-radius: var(--spacing-lg);
+  box-shadow: var(--box-shadow-card);
+}
 
-Ancho máximo en desktop: ~736 px (46rem)
-
-Bordes redondeados: border-radius: 1.5rem (24 px)
-
-Sombra: muy sutil, posiblemente box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05)
-
-
-Fondo de la tarjeta: background-color: hsl(0, 0%, 100%) → --white
-
-Padding interior general: 2rem (32 px) en desktop
-
-Responsive: centrado, con padding lateral para móviles (sugiero padding: 1.5rem o clamp() en móvil)
+/*
 
 */
