@@ -294,7 +294,84 @@ table {
   line-height: 1.35rem;
 }
 
+/*Estilos seccion nutricion*/
+
+.recipe-card__nutrition-title {
+  font-family: var(--ff-heading), sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.143rem + 0.536vw, 1.625rem);
+  color: var(--color-title-h2-brown-800);
+  margin-bottom: var(--spacing-lg);
+}
+
+.recipe-card__nutrition-table-caption {
+  font-family: var(--ff-body), sans-serif;
+  font-size: clamp(0.75rem, 0.679rem + 0.357vw, 1rem);
+  font-weight: 400;
+  color: var(--Stone-600);
+  text-align: left;
+  margin-bottom: var(--spacing-md);
+}
+
+/*Estilos de la tabla de nutrición*/
+
+.recipe-card__nutrition-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.recipe-card__nutrition-table-body tr {
+  border-bottom: 1px solid var(--color-hr-Stone-150);
+}
+
+.recipe-card__nutrition-table-body tr:last-child {
+  border-bottom: none;
+}
+
+.recipe-card__nutrition-table th,
+.recipe-card__nutrition-table td {
+  font-size: clamp(0.875rem, 0.804rem + 0.357vw, 1.125rem);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: left;
+}
+
+.recipe-card__nutrition-table th {
+  font-family: var(--ff-body), sans-serif;
+  font-weight: 400;
+  color: var(--Stone-600);
+}
+
+.recipe-card__nutrition-table td {
+  font-family: var(--ff-body), sans-serif;
+  font-weight: 700;
+  color: var(--color-title-h2-brown-800);
+}
+
 /*
+    Título:
+
+        Young Serif, 1.5rem, --brown-800
+
+    Texto descripción:
+
+        Outfit, regular, 1rem
+
+    Tabla:
+
+        Border-top: 1px solid var(--stone-150)
+
+        Filas tipo grid o table-layout: fixed
+
+        Primer columna: Outfit 400, color --stone-600
+
+        Segunda columna (valores): Outfit 700, --brown-800
+
+        Padding vertical: 0.75rem (12px)
+
+        Línea divisoria: border-bottom: 1px solid var(--stone-150) excepto última fila
+
 
 
 */
