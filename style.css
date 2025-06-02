@@ -3,7 +3,7 @@
 @font-face {
   font-family: "outfit";
   src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
-  font-weight: 400, 600, 700;
+  font-weight: 400 600 700;
   font-style: normal;
 }
 
@@ -127,12 +127,13 @@ table {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 43.75rem;
+  max-width: 40rem;
   min-width: 20rem;
   padding: var(--spacing-xxlg);
   background-color: var(--color-bg-card-white);
   border-radius: var(--spacing-lg);
   box-shadow: var(--box-shadow-card);
+  margin: 1rem;
 }
 
 /*Estilos de la imagen y el figcaption*/
@@ -147,16 +148,16 @@ table {
   border-bottom-right-radius: var(--spacing-sm);
   margin-bottom: var(--spacing-lg);
 }
+
 .recipe-card__image-caption {
   position: absolute;
-  width: 100%;
+  width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
-
 /*Estilos del header: Titulo y descripción*/
 .recipe-card__title {
   font-family: var(--ff-heading), sans-serif;
@@ -296,6 +297,10 @@ table {
 
 /*Estilos seccion nutricion*/
 
+.recipe-card__nutrition {
+  margin-top: 1rem;
+}
+
 .recipe-card__nutrition-title {
   font-family: var(--ff-heading), sans-serif;
   font-weight: 700;
@@ -332,8 +337,7 @@ table {
 .recipe-card__nutrition-table th,
 .recipe-card__nutrition-table td {
   font-size: clamp(0.875rem, 0.804rem + 0.357vw, 1.125rem);
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding: 0.75rem;
   text-align: left;
 }
 
@@ -349,28 +353,35 @@ table {
   color: var(--color-title-h2-brown-800);
 }
 
+.recipe-card__footer {
+  width: 100%;
+  height: 100vh;
+  padding: 0.8rem;
+  background-color: var(--color-bg-main-stone-100);
+}
+
+@media (max-width: 768px) {
+  .recipe-card__main-container {
+    background-color: black;
+  }
+
+  .recipe-card {
+    border-radius: 0;
+    padding: 0;
+  }
+  .recipe-card > * {
+    margin: 0 1rem;
+  }
+
+  .recipe-card__image-container {
+    margin: 0;
+  }
+  .recipe-card__image {
+    border-radius: 0;
+  }
+}
+
 /*
-    Título:
-
-        Young Serif, 1.5rem, --brown-800
-
-    Texto descripción:
-
-        Outfit, regular, 1rem
-
-    Tabla:
-
-        Border-top: 1px solid var(--stone-150)
-
-        Filas tipo grid o table-layout: fixed
-
-        Primer columna: Outfit 400, color --stone-600
-
-        Segunda columna (valores): Outfit 700, --brown-800
-
-        Padding vertical: 0.75rem (12px)
-
-        Línea divisoria: border-bottom: 1px solid var(--stone-150) excepto última fila
 
 
 
