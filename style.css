@@ -253,25 +253,48 @@ table {
   background-color: var(--color-hr-Stone-150);
 }
 
+/* Estilos de la section de Instrucciones*/
+
+.recipe-card__instructions {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-card__instructions-title {
+  font-family: var(--ff-heading), sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.143rem + 0.536vw, 1.625rem);
+  color: var(--color-title-h2-brown-800);
+  margin-bottom: var(--spacing-lg);
+}
+
+.recipe-card__instructions-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding-left: var(--spacing-xxlg);
+}
+
+.recipe-card__step {
+  font-family: var(--ff-body), sans-serif;
+  color: var(--Stone-600);
+  font-size: clamp(0.75rem, 0.679rem + 0.357vw, 1rem);
+  font-weight: 400;
+  list-style: decimal;
+}
+
+.recipe-card__step::marker {
+  color: var(--color-title-h2-brown-800);
+  font-weight: 600;
+}
+
+.recipe-card__step-description {
+  margin-left: 1rem;
+  line-height: 1.35rem;
+}
+
 /*
-Títulos:
 
 
-    Fuente: Young Serif
-
-    Tamaño: 1.5rem (24px)
-
-    Color: --brown-800 → hsl(14, 45%, 36%)
-
-Lista:
-
-    Bullet tipo disc con color --stone-600
-
-    Fuente: Outfit, 400, tamaño: 1rem (16px)
-
-    Espaciado entre ítems: 0.5rem (8px)
-
-Margin-top título respecto a bloque anterior: 2rem (32px)
-
-Margin-bottom lista: 1.5rem
 */
