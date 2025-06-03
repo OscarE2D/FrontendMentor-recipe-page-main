@@ -1,89 +1,170 @@
-# Frontend Mentor - Recipe page
+# Frontend Mentor - Recipe Page Solution
 
-![Design preview for the Recipe page coding challenge](./preview.jpg)
+This is my solution to the [Recipe Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). These challenges help me improve my coding skills by building realistic and accessible web interfaces.
 
-## Welcome! 👋
+For this project, I developed a recipe card for a simple omelet using semantic HTML and modern CSS. I applied the BEM (Block Element Modifier) methodology to maintain clean, scalable code, while ensuring responsiveness and accessibility across devices. The goal was to replicate the original design with precision and to follow best practices for layout, structure, and user experience.
 
-Thanks for checking out this front-end coding challenge.
+## Table of Contents
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+- [Overview](#overview)
+  - [The Challenge](#the-challenge)
+  - [Screenshots](#screenshots)
+  - [Links](#links)
+- [My Process](#my-process)
+  - [Built With](#built-with)
+  - [What I Learned](#what-i-learned)
+  - [Continued Development](#continued-development)
+  - [Useful Resources](#useful-resources)
+- [Author](#author)
+- [How to Run Locally](#how-to-run-locally)
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The Challenge
 
-## The challenge
+The challenge involved developing a recipe card component using semantic HTML, modern CSS, and a fully responsive and fluid design. The goal was not only to replicate the visual structure, but also to ensure accessibility, consistency, and adherence to web development best practices.
 
-Your challenge is to build out this recipe page and get it looking as close to the design as possible.
+The card was divided into several distinct sections:
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- **Image Section:** Showcasing the final dish with appropriate alternative text and accessible `<figure>` / `<figcaption>` markup.
+- **Header Section:** Including the recipe title and a short description, styled for prominence and clarity.
+- **Preparation Time and Ingredients:** These sections use structured lists and semantic headings, with attention to spacing (padding, margin), list styling, and text hierarchy.
+- **Instructions Section:** Implemented as an ordered list, with each step labeled using nested heading tags and paragraph descriptions for clear navigation and screen reader support.
+- **Nutrition Table:** A semantic `<table>` displaying nutritional facts, including a caption, proper use of `<thead>`, `<tbody>`, `<th>`, and `<td>`, and scope attributes to enhance accessibility for assistive technologies.
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+The component’s design adheres to a consistent color scheme (following provided HSL values), typographic scales (based on rem units), and a clean visual rhythm through well-defined spacing and alignment. The layout is responsive, gracefully adapting from desktop to mobile viewports while maintaining readability, hierarchy, and usability.
 
-## Where to find everything
+Every section was carefully styled using the BEM (Block Element Modifier) methodology to promote maintainability, scalability, and clarity in the CSS architecture.
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Screenshot
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+![Desktop version](./design/desktop-design.jpg)  
+_Desktop version of the recipe card._  
+The layout features a centered design with generous content width, clear typography, and well-structured spacing. It emphasizes readability and visual balance, making full use of larger screens while maintaining accessibility standards.
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+![Mobile version](./design/mobile-design.jpg)  
+_Mobile version of the recipe card._  
+The layout adapts fluidly to smaller viewports, stacking elements vertically with consistent padding and legible text. Despite the reduced space, the interface remains intuitive, visually clean, and fully accessible across devices.
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+### Links
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+Below are the links to the project's code repository and the live demo site:
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- [Solution on GitHub](https://github.com/OscarE2D/FrontendMentor-recipe-page-main)
+- [Live Demo on GitHub Pages](https://oscare2d.github.io/FrontendMentor-recipe-page-main/)
 
-## Building your project
+## My process
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### Built with
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- Semantic HTML5 markup
+- CSS custom properties (variables)
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- BEM (Block Element Modifier) methodology
 
-## Deploying your project
+### What I learned
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+During the development of this recipe card, I encountered several challenges that led to valuable learning experiences. The most notable takeaways include:
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- **Correct application of the BEM methodology:**  
+  I learned to implement the BEM (Block, Element, Modifier) methodology consistently in both HTML and CSS. This approach allowed me to clearly identify components without relying excessively on nested selectors, significantly improving the maintainability and scalability of the codebase.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+- **Logical and professional CSS organization:**  
+  I structured CSS into clearly defined blocks, grouping styles by section in an organized manner. This practice enhanced code readability and simplified future maintenance or feature additions.
 
-## Create a custom `README.md`
+- **Semantic and accessible table construction:**  
+  I correctly built an HTML table using semantic elements such as `<caption>`, `<thead>`, `<tbody>`, `<th>`, and `<td>`, alongside appropriate `scope` attributes. This ensures better accessibility, especially for screen readers and assistive technologies.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+- **Advanced CSS pseudo-elements and properties:**  
+  I applied pseudo-elements like `::marker` to customize list markers and used properties such as `text-indent` for better content presentation. Additionally, I improved content structure within `<li>` elements by wrapping text inside elements like `<span>`, `<strong>`, or `<p>` when necessary.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+- **Definition and use of CSS variables:**  
+  I enhanced visual consistency by defining and reusing CSS custom properties (e.g., `--primary-color`, `--font-size-base`), which simplified styling and maintenance.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- **Responsive and accessible design principles:**  
+  I ensured the layout adapts fluidly across devices from mobile to desktop, prioritizing readability and usability. Accessibility considerations included semantic HTML, clear navigation order, and support for users with different abilities.
 
-## Submitting your solution
+### Continued development
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+- **Refining spacing and visual alignment**  
+  Fine-tune padding, margins, and element alignment to precisely match design specifications.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- **Improving CSS specificity and cascade control**  
+  Strengthen the understanding of how CSS specificity and inheritance affect style application.
 
-## Sharing your solution
+- **Expanding use of pseudo-elements and pseudo-classes**  
+  Leverage tools like `::before`, `::after`, `:not()`, and `:has()` for more elegant and maintainable solutions.
 
-There are multiple places you can share your solution:
+- **Enhancing accessibility (A11y)**  
+  Apply ARIA roles, improve keyboard navigation, and add semantic enhancements to improve usability for all users.
 
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+- **Optimizing CSS structure and scalability**  
+  Explore modern architecture patterns like ITCSS or the CSS `@layer` rule to ensure maintainable code as projects grow.
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+- **Advancing responsive design techniques**  
+  Implement `clamp()`, container queries, and advanced grid layouts for greater responsiveness and adaptability.
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+### Useful resources
 
-## Got feedback for us?
+#### 1. **Git Immersion**
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+🔗 [https://gitimmersion.com/](https://gitimmersion.com/)  
+📘 _A practical, step-by-step guide to mastering Git._  
+This site goes beyond listing commands — it walks you through practical exercises and real examples. Perfect for understanding not just the **how**, but the **why** behind Git.
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+---
 
-**Have fun building!** 🚀
+#### 2. **Learn CSS Grid**
+
+🔗 [https://learncssgrid.com/](https://learncssgrid.com/)  
+📘 _A comprehensive, beginner-friendly guide to mastering CSS Grid._  
+Offers a clean, progressive learning path through essential CSS Grid concepts, using clear examples and visual demos to help build strong layout skills from the ground up.
+
+---
+
+#### 3. **CSS-Tricks: A Complete Guide to Grid**
+
+🔗 [https://css-tricks.com/snippets/css/complete-guide-grid/](https://css-tricks.com/snippets/css/complete-guide-grid/)  
+📘 _A thorough, visual reference for all CSS Grid properties and features._  
+Ideal for both quick lookups and in-depth learning, with diagrams, live examples, and clear explanations of implicit and explicit grid behaviors.
+
+---
+
+#### 4. **Modern HTML Explained For Beginners** – _by HTML Academy_
+
+🔗 [https://htmlacademy.org/blog/html/semantic-html-guide](https://htmlacademy.org/blog/html/semantic-html-guide)  
+📘 _Explains how to use semantic HTML in modern development._  
+Focuses on current best practices in HTML5, showing how semantic tags improve SEO, accessibility, and structure. Great for strengthening foundational HTML skills with a modern approach.
+
+---
+
+#### 5. **Every Layout – Intrinsic Design Patterns**
+
+🔗 [https://every-layout.dev/](https://every-layout.dev/)  
+📘 _Teaches CSS design patterns with a functional and modern approach._  
+Learn to use tools like `clamp()`, `flex`, `grid`, and other advanced CSS features through a philosophy of simplicity and adaptability — avoiding over-reliance on media queries.
+
+---
+
+#### 6. **You Might Not Need JavaScript**
+
+🔗 [https://youmightnotneedjs.com/](https://youmightnotneedjs.com/)  
+📘 _Shows how many common interactions can be achieved with just HTML and CSS._  
+A great resource to learn modern attributes and performance techniques, helping you write simpler, lighter code by reducing unnecessary JavaScript.
+
+---
+
+## Author
+
+- Website – [Oscar Echenique D.](https://github.com/OscarE2D)
+- Frontend Mentor – [@OscarE2D](https://www.frontendmentor.io/profile/OscarE2D)
+
+---
+
+## How to Run Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/OscarE2D/FrontendMentor-recipe-page-main.git
+```
